@@ -1,0 +1,2 @@
+# projek
+Latihan membuat projek
