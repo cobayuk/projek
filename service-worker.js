@@ -16,7 +16,7 @@ module.exports = {
   'assets/**/**.woff2'
  ],
  runtimeCaching: [{
-  urlPattern: /^https:\/\/me.taufiqhdyt\.com\//,
+  urlPattern: /^https:\/\/cobayuk.github\.io\/projek//,
   handler: 'networkFirst'
  }]
 }
