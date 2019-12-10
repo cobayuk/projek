@@ -24,7 +24,7 @@
         <!-- JS -->
         <script src="https://technext.github.io/awesplash/assets/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://technext.github.io/awesplash/assets/js/vendor/jquery-1.12.0.min.js"></script>
-	<script src="sw-register.js"></script>
+	
 		     
 		     
 		
@@ -72,14 +72,13 @@
         <!-- JS -->
         <script src="https://technext.github.io/awesplash/assets/js/plugins/animate-headline.js"></script>
         <script src="https://technext.github.io/awesplash/assets/js/main.js"></script>
-	    // CODELAB: Register service worker.
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-        .then((reg) => {
-          console.log('Service worker registered.', reg);
-        });
-  });
-}
+	<script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
     </body>
 </html>
